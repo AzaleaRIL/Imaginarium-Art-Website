@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to top, #2c3e50, #3498db);
+            background-image: url(https://img.freepik.com/premium-vector/gradient-vector-pink-yellow-plain-background_901408-26564.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .forgot-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: 300px;
+        }
+
+        .forgot-container * {
+            color: black !important;
+        }
+
+        .forgot-container h2 {
+            margin-bottom: 10px;
+        }
+
+        .forgot-container p {
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .forgot-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            color: black;
+        }
+
+        .forgot-container input::placeholder {
+            color: black;
+        }
+
+        .forgot-container button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #fd80d9;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .forgot-container button:hover {
+            background: #2980b9;
+        }
+
+        .forgot-container .back-to-login {
+            margin-top: 10px;
+            display: block;
+            text-decoration: none;
+            font-size: 14px;
+            color: black;
+        }
+
+        .forgot-container .back-to-login:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="forgot-container">
+        <h2>Forgot Password</h2>
+        <p>Enter your email address to receive a password reset link.</p>
+        <input type="email" placeholder="Email Address">
+        <button>Send Reset Link</button>
+        <a href="login.html" class="back-to-login">Back to Login</a>
+    </div>
+</body>
+</html>

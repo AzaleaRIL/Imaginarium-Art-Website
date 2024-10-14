@@ -1,0 +1,121 @@
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to top, #2c3e50, #3498db);
+            background-image: url(https://img.freepik.com/premium-vector/gradient-vector-pink-yellow-plain-background_901408-26564.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: 300px;
+        }
+
+        .login-container * {
+            color: black !important;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .login-container input[type="text"], .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            color: black;
+        }
+
+        .login-container input[type="text"]::placeholder, .login-container input[type="password"]::placeholder {
+            color: black;
+        }
+
+        .login-container .fa {
+            position: absolute;
+            margin-left: -30px;
+            margin-top: 15px;
+        }
+
+        .login-container .options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .login-container .options a {
+            text-decoration: none;
+        }
+
+        .login-container .options a:hover {
+            text-decoration: underline;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #fd80d9;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background: #2980b9;
+        }
+
+        .login-container .register {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .login-container .register a {
+            text-decoration: none;
+        }
+
+        .login-container .register a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <div>
+            <input type="text" placeholder="Username">
+            <i class="fa fa-user"></i>
+        </div>
+        <div>
+            <input type="password" placeholder="Password">
+            <i class="fa fa-lock"></i>
+        </div>
+        <div class="options">
+            <label><input type="checkbox"> Remember Me</label>
+            <a href="forgotpass.html">Forgot Password</a>
+        </div>
+        <button onclick="window.location.href='index.html'">Login</button>
+        <div class="register">
+            Don't have an account? <a href="register.html">Register</a>
+        </div>
+    </div>
+</body>
+</html>
